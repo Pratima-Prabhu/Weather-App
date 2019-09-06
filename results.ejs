@@ -1,0 +1,24 @@
+<h1>
+	Todays Weather!!
+</h1>
+<h3>
+	<%= data["name"] %>
+</h3>
+<p>
+	Sky : <%= data["weather"][0].description %>
+</p>
+<ul>
+	<li>
+		Present Temperature :<%= data["main"].temp %>
+	</li>
+	<li>
+		Minimum Temperature :<%= data["main"].temp_min %>
+	</li>
+	<li>
+		Maximum Temperature :<%= data["main"].temp_max %>
+	</li>
+	<li>
+		Humidity			:<%= data["main"].humidity %>
+	</li>
+	
+</ul>
